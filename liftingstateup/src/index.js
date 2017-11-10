@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Details from './App.js';
+import Buttons from './components/Buttons.js';
 
 
-ReactDOM.render(<Details />, document.getElementById('root'));
+ReactDOM.render(<Buttons />, document.getElementById('root'));
 

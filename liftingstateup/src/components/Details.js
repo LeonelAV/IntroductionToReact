@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 
 
 class Details extends React.Component {
@@ -7,6 +7,5 @@ class Details extends React.Component {
     return <h1>Detail</h1>
   }
 }
-
 
 export default Details;
