@@ -10,10 +10,10 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <Buttons name="John"/>
-        <Buttons name="Paul"/>
-        <Buttons name="Ringo" />
-        <Buttons name="George" />
+        <Buttons id={0} name="John"/>
+        <Buttons id={1} name="Paul"/>
+        <Buttons id={2} name="Ringo" />
+        <Buttons id={3} name="George" />
         <Details />
       </div>
     )
