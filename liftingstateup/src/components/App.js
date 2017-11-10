@@ -7,6 +7,13 @@ class App extends React.Component {
     super(props);
     this.state = {activeArray:[0,0,0,0], details:""}
   }
+
+  clickHandler(id){
+    var arr = [0,0,0,0]
+    arr[id] = 1
+    this.setState({activeArray: arr})
+  }
+
   render(){
     return (
       <div>
