@@ -17,10 +17,10 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <Buttons id={0} name="John"/>
-        <Buttons id={1} name="Paul"/>
-        <Buttons id={2} name="Ringo" />
-        <Buttons id={3} name="George" />
+        <Buttons id={0} clickHandler={this.clickHandler} name="John"/>
+        <Buttons id={1} clickHandler={this.clickHandler} name="Paul"/>
+        <Buttons id={2} clickHandler={this.clickHandler} name="Ringo" />
+        <Buttons id={3} clickHandler={this.clickHandler} name="George" />
         <Details />
       </div>
     )
