@@ -4,7 +4,7 @@ import '../App.css';
 
 class Details extends React.Component {
   render(){
-    return <h1>Detail</h1>
+    return <h1>This the detailed name</h1>
   }
 }
 

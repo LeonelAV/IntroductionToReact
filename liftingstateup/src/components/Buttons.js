@@ -1,11 +1,11 @@
 import React from 'react';
-import Details from './Details.js';
+
 
 class Buttons extends React.Component {
   render(){
     return (
       <button>
-        <Details />
+        {this.props.name}
       </button>
     )
   }
