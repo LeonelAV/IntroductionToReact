@@ -1,6 +1,7 @@
 import React from 'react';
 import Buttons from './Buttons';
 import Details from './Details.js';
+import Title from './Title.js';
 
 class App extends React.Component {
   constructor(props){
@@ -17,7 +18,8 @@ class App extends React.Component {
 
   render(){
     return (
-      <div>
+      <div className="main">
+        <Title />
         <Buttons id={0} active={this.state.activeArray[0]} clickHandler={this.clickHandler} name="John"/>
         <Buttons id={1} active={this.state.activeArray[1]} clickHandler={this.clickHandler} name="Paul"/>
         <Buttons id={2} active={this.state.activeArray[2]} clickHandler={this.clickHandler} name="Ringo" />
