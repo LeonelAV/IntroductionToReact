@@ -7,7 +7,7 @@ The exercise consists in to do an application that has four buttons
 
 The buttons initially all have blue text and are all inative. The last button that is pressed is considered the active button and its text becomes red. Lastly, the description section shows the name of the active button(the name of the choosed Beatle)
 
-![gif](liftinguogif.gif)
+![gif](https://raw.githubusercontent.com/LeonelAV/IntroductionToReact/master/liftingstateup/liftingupgif.gif)
 
 
 ## Available Scripts
