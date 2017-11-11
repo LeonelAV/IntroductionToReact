@@ -13,7 +13,7 @@ There are times when an event occurs on a component and the event handler needs 
 
 ##Main steps
 
-1.Create the Details component
+1. Create the Details component
 2. Create Buttons component
 3. Create App component
 4. Define the initial state class App component
