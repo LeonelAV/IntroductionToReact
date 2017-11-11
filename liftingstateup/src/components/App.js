@@ -6,6 +6,7 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {activeArray:[0,0,0,0], details:""}
+    this.clickHandler = this.clickHandler.bind(this)
   }
 
   clickHandler(id){
@@ -17,10 +18,10 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <Buttons id={0} clickHandler={this.clickHandler} name="John"/>
-        <Buttons id={1} clickHandler={this.clickHandler} name="Paul"/>
-        <Buttons id={2} clickHandler={this.clickHandler} name="Ringo" />
-        <Buttons id={3} clickHandler={this.clickHandler} name="George" />
+        <Buttons id={0} active={this.state.activeArray[0]} clickHandler={this.clickHandler} name="John"/>
+        <Buttons id={1} active={this.state.activeArray[1]} clickHandler={this.clickHandler} name="Paul"/>
+        <Buttons id={2} active={this.state.activeArray[2]} clickHandler={this.clickHandler} name="Ringo" />
+        <Buttons id={3} active={this.state.activeArray[3]} clickHandler={this.clickHandler} name="George" />
         <Details />
       </div>
     )
