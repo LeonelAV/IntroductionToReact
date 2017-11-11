@@ -9,10 +9,10 @@ class App extends React.Component {
     this. clickHandler = this.clickHandler.bind(this)
   }
 
-  clickHandler(id){
+  clickHandler(id,details){
     var arr = [0,0,0,0]
     arr[id] = 1
-    this.setState({activeArray: arr})
+    this.setState({activeArray: arr, details:details})
   }
 
   render(){
@@ -22,7 +22,7 @@ class App extends React.Component {
         <Buttons id={1} active={this.state.activeArray[1]} clickHandler={this.clickHandler} name="Paul"/>
         <Buttons id={2} active={this.state.activeArray[2]} clickHandler={this.clickHandler} name="Ringo" />
         <Buttons id={3} active={this.state.activeArray[3]} clickHandler={this.clickHandler} name="George" />
-        <Details />
+        <Details details={this.state.details} />
       </div>
     )
   }
