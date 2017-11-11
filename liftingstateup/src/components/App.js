@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {activeArray:[0,0,0,0], details:""}
-    this.clickHandler = this.clickHandler.bind(this)
+    this. clickHandler = this.clickHandler.bind(this)
   }
 
   clickHandler(id){
