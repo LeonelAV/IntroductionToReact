@@ -20,7 +20,8 @@ There are times when an event occurs on a component and the event handler needs 
 ```javascript
 this.state = {activeArray:[0,0,0,0], details=""}
 ```
-...this is going to define is a button is active or inactive (red or blue);
+
+...this is going to define is a button is active or inactive (red or blue);  
 ...the details propertie it will holding the text of the details seccion
 
 5. Pass an id for each one of the buttons to know each one had been pressed.
