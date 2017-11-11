@@ -26,6 +26,11 @@ this.state = {activeArray:[0,0,0,0], details=""}
    the details propertie it will holding the text of the details seccion
 
 5. Pass an id for each one of the buttons to know each one had been pressed.
+6. Define our event handler
+  * It's going to have `id` as argumennt,that's the way App component know each index of the `activeArray` to update.
+  * create a new array based on the `id` that was passed ```(javascript) var arr=[0,0,0,0]``` 
+  * Set the index of the array that was passed to 1. ```(javascript) arr[id]=1```
+  * 
 
 ## Available Scripts
 
