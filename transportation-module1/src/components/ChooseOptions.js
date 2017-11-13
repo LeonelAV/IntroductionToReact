@@ -1,6 +1,7 @@
 import React from 'react'
 
-function ChooseOptions(){
+
+function ChooseOptions(props){
   return(
   <div>
      <label>New Only<input type="checkbox" checked /></label>
@@ -17,4 +18,4 @@ function ChooseOptions(){
   )
 }
 
-export default Title
+export default ChooseOptions
