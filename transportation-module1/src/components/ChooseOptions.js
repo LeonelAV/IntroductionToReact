@@ -16,3 +16,5 @@ function ChooseOptions(){
   </div>
   )
 }
+
+export default Title
