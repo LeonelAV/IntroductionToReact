@@ -22,3 +22,5 @@ function VehicleTable(props) {
     </div>
   )
 }
+
+export default VehicleTable
