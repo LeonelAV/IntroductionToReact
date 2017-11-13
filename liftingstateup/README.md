@@ -28,9 +28,24 @@ this.state = {activeArray:[0,0,0,0], details=""}
 5. Pass an id for each one of the buttons to know each one had been pressed.
 6. Define our event handler
   * It's going to have `id` as argumennt,that's the way App component know each index of the `activeArray` to update.
-  * create a new array based on the `id` that was passed ```javascript var arr=[0,0,0,0]``` 
-  * Set the index of the array that was passed to 1. ```javascript arr[id]=1```
+  * create a new array based on the `id` that was passed 
+  ```javascript 
+  var arr=[0,0,0,0]
+  ```
+  * Set the index of the array that was passed to 1. 
+  ```javascript 
+  arr[id]=1
+  ```
+
 7. Pass the event handler down to the buttons
+  * `<Buttons id={0} clickHandler={this.clickHandler} ... /> `
+8. Give the action that we want to the buttons => Should be blue when it's inactive and should be red when activeArray
+  8.1. Add style to button in `<buttons />` component:
+  * `style = {{ color: this.person.active? 'red': 'blue'}}`
+  * This means if `this.props.active` is true(one) become red is otherwise become blue.
+9. Define the onClick event in the `<button>` element in the `<Buttons />` component:
+  * ` onClick = {() => this.props.clickHandler(this.props.id, this.props.name) } ` 
+  * When a button is clicked it will call clickHanlder method(this.props.clickHandler) and inside clickHandler method will be passed two arguments - the id and the name of `button`
 
 
 ## Available Scripts
