@@ -3,10 +3,20 @@ import React from 'react';
 
 
 class Counter extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {counter: 0}
+    this.clickHandler =  this.clickHandler.bind(this)
+  }
+
+  clickHandler(){
+    this.setState({counter: this.state.counter +1})
+  }
+
   render(){
     return (
       <div>
-        <h1>Hello WOrld</h1>
+        <button onClick = {this.clickHandler} >{this.state.counter}</button>
       </div>
     )
   }
