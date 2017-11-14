@@ -1,6 +1,12 @@
 import React from 'react';
 
+const buttonStyle = {
+  width:'100px',
+  fontSize:'50px',
+  position: 'absolute',
+  right:'50%'
 
+}
 
 class Counter extends React.Component {
   constructor(props){
@@ -16,7 +22,7 @@ class Counter extends React.Component {
   render(){
     return (
       <div>
-        <button onClick = {this.clickHandler} >{this.state.counter}</button>
+        <button style={buttonStyle} onClick = {this.clickHandler} >{this.state.counter}</button>
       </div>
     )
   }
