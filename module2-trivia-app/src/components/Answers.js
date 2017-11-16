@@ -4,7 +4,10 @@ class Answers extends React.Component{
   render(){
   let style = {
     height: 100,
-    width: 300
+    width: 300,
+    display: 'flex',
+    justifyContent: 'center'
+
   }
   return (
     <div>
