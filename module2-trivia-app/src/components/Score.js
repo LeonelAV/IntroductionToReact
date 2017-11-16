@@ -3,7 +3,8 @@ import React from 'react';
 function Score(){
   var style = {
     float: 'right',
-    marginRight: '30%'
+    marginRight: 10,
+    marginTop: -250
   }
   return(
     <div style = {style}>

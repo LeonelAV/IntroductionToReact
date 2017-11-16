@@ -5,8 +5,12 @@ import Score from '../components/Score';
 
 class TriviaApp extends Component {
   render() {
+    let style = {
+      width:'70%',
+      margin:'0 auto'
+    } 
     return (
-      <div>
+      <div style={style}>
         <Question />
         <Answers name='answer1'/>
         <Answers name='answer2'/>
