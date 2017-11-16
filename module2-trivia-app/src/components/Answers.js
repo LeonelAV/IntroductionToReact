@@ -8,7 +8,10 @@ class Answers extends React.Component{
   }
   return (
     <div>
-      <button style={style}>{this.props.name}</button>
+      {this.props.answers.map(function(answer, i){
+        return <button style={style} key={i}>{answer}</button>
+        })
+  }
     </div>
   )
 }

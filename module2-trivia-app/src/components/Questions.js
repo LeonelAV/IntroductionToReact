@@ -1,10 +1,16 @@
 import React from 'react';
 
-function Questions (){
+class Questions extends React.Component{
+  render(){
   let style = {
     color: 'red'
   }
-  return <h1 style = {style} >This is a question</h1>
+  return (
+    <div>
+      <h1 style = {style} >{this.props.question}</h1>
+    </div>
+  )
+}
 }
 
 export default Questions;
