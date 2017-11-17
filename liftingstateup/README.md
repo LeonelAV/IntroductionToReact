@@ -45,9 +45,17 @@ this.state = {activeArray:[0,0,0,0], details=""}
   * This means if `this.props.active` is true(one) become red is otherwise become blue.
 9. Define the onClick event in the `<button>` element in the `<Buttons />` component:
   * ` onClick = {() => this.props.clickHandler(this.props.id, this.props.name) } ` 
-  * When a button is clicked it will call clickHanlder method(this.props.clickHandler) and inside clickHandler method will be passed two arguments - the id and the name of `button`
+  * When a button is clicked it will call clickHanlder method(this.props.clickHandler) and inside clickHandler method will be passed two arguments - the id and the name of button(`this.props.id, this.props.name`)
 
+10. The state need to be passed to the buttons, so each button is going to have an active property.
+  * and will be equal to the respective index of active Array propertie.
+  * ` <Button id={0} active={this.state.activeArray[0]} clickHandler={this.clickHandler} name='one' `
 
+11. We need to bind the clickHandler so after the definition of state we do:
+  * ` this.clickHandler =  this.clickHanlder.bind(this) `
+  * now when we click a button it already changes is color by modifying the activeArray in the app state and then that app component passes down the active array indexes to each of the components and then all the components states changed based on that event handler.
+  
+   
 ## Available Scripts
 
 In the project directory, you can run:
