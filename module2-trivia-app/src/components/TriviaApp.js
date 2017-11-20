@@ -28,6 +28,8 @@ var answers = [
   ['Pennsylvania','New York','California','Kentucky']
   ]
 
+  
+
 class TriviaApp extends Component {
   constructor(props){
       super(props)
