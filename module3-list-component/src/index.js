@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import {ControlledInput} from './ControlledInput'
 
 var array = [
   {id:100, product:"Apple", price:1},
