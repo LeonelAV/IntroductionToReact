@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {ControlledInput} from './ControlledInput'
+import { ControlledInput } from './ControlledInput';
 
 var array = [
   {id:100, product:"Apple", price:1},
@@ -16,7 +16,12 @@ class ProductList extends Component {
   }
   render(){
     var elements = this.props.productArray.map( (item, index) => <li key={item.id}>Product: {item.product} | Price: {item.price}</li>)
-    return <ol>{elements}</ol>
+    return (
+      <div>
+        <ol>{elements}</ol>
+        <ControlledInput />
+      </div>
+    )
   }
 }
 
