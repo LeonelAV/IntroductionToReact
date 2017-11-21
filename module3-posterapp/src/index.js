@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {Post} from './components/Post';
+import {PostList} from './components/PostList'
 
-ReactDOM.render(<Post title="Post title" score="0" />, document.getElementById('root'));
+ReactDOM.render(<PostList postList = {[1,2,3,4,5]} />, document.getElementById('root'));
 
