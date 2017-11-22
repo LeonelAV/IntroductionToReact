@@ -5,10 +5,14 @@ export class App extends React.Component {
     super(props)
     this.state = {value:"", items: []}
   }
+  handleChange(event){
+    this.setState({value: event.target.value})
+    console.log(this.state.value)
+  }
   render(){
     return (
     <div> 
-      App
+      <input value={this.state.value} onChange={this.handleChange.bind(this)} />
     </div>
     )
   }
